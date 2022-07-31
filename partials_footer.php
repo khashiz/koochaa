@@ -70,7 +70,7 @@
                     <div>
                         <ul class="menu light">
                             <li><a href="#">قوانین و مقررات کوچا</a></li>
-                            <li><a href="#">پرسش‌های متداول</a></li>
+                            <li><a href="faq.php">پرسش‌های متداول</a></li>
                             <li><a href="#">سیاست حفظ حریم خصوصی</a></li>
                             <li><a href="#">همکاری با کوچا</a></li>
                             <li><a href="#">گزارش اشکال در آگهی</a></li>
