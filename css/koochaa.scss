@@ -1,0 +1,358 @@
+@import "colors";
+@import "mixins";
+@font-face {
+  font-family: 'iransansxv';
+  src: url('../font/iransansxv.woff') format('woff-variations'),
+  url('../font/iransansxv.woff') format('woff');
+  font-weight: 100 900;
+  font-display: fallback;
+}
+@font-face {
+  font-family: iransansx;
+  src: url('../font/iransansx-regular.woff') format('woff');
+}
+@font-face {
+  font-family: iransansx;
+  src: url('../font/iransansx-bold.woff') format('woff');
+  font-weight: 700;
+}
+body,
+.font{
+  font-family: 'iransansx', Tahoma, sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  body,
+  .font{
+    font-family: 'iransansxv', Tahoma, sans-serif;
+  }
+}
+
+//Utilities
+.f700{font-variation-settings: "wght" 700, "dots" 4;}
+
+header{
+  background-color: #fff;
+  .logo{
+    .primary{
+      fill: $primary;
+    }
+    .accent{
+      fill: $accent;
+    }
+  }
+  nav{
+    background-color: transparent !important;
+    ul{
+      &.uk-navbar-nav{
+        li{
+          a{
+            font-variation-settings: "wght" 500;
+            min-height: 90px !important;
+            @extend .font;
+          }
+          &.uk-active{
+            a{
+              color: $primary;
+              font-variation-settings: "wght" 700;
+            }
+          }
+        }
+      }
+    }
+  }
+  form{
+    input{
+      font-family: "iransansxv", Tahoma, sans-serif !important;
+      font-size: 16px !important;
+      font-variation-settings: 'wght' 500;
+    }
+  }
+}
+section{
+  &.pageHeader{
+    background-image: url("https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-color: $gray100;
+    h1,h2{
+      font-variation-settings: "wght" 700, "dots" 4;
+      color: #fff;
+    }
+    &.pageHeader{
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+      }
+    }
+  }
+  &.contactForm{
+    h3{
+      font-variation-settings: 'wght' 700;
+      @extend .font;
+    }
+  }
+}
+.ss02{
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+ol{
+  &.breadcrumb{
+    li{
+      color: #fff;
+      i{
+        font-size: 10px;
+        margin: 0 8px;
+        @include transform(translateY(3px));
+      }
+      a,span{
+        font-size: 13px;
+        font-variation-settings: "wght" 500;
+        color: inherit;
+      }
+    }
+  }
+}
+ul{
+  &.menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      a{
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 14px;
+        color: $gray700;
+        text-decoration: none;
+        font-variation-settings: "wght" 500;
+        @include transition();
+        &:hover{
+          color: $gray900;
+        }
+      }
+    }
+    &.light{
+      li{
+        a{
+          color: $gray200;
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  > div{
+    &:last-child{
+      font-size: 0;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+  }
+  h5{
+    color: #fff;
+    @extend .font;
+    font-variation-settings: "wght" 700;
+  }
+  .modules{
+    .newsletter{
+      > span{
+        color: #fff;
+        font-size: 12px;
+        font-variation-settings: "wght" 500;
+      }
+      form{
+        background-color: #fff;
+        padding: 5px;
+        input{
+          outline: none;
+          border: none;
+          font-size: 14px;
+          height: 100%;
+          padding: 10px 20px;
+          color: $gray900;
+          font-variation-settings: "wght" 500;
+          text-align: right;
+          direction: ltr;
+          @extend .font;
+          @media (max-width: 639px) {
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+  .copyright{
+    color: #fff;
+    font-size: 12px;
+    font-variation-settings: "wght" 500;
+  }
+  .bird{
+    color: #fff;
+    @include transition();
+    &:hover{
+      color: scale-color($accent, $lightness: +25%);;
+    }
+  }
+  .socials{
+    li{
+      a{
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        @include transition();
+        &:hover{
+          color: scale-color($accent, $lightness: +25%);;
+        }
+      }
+    }
+  }
+}
+
+.uk-background-primary{background-color: $primary !important;}
+
+.uk-button{
+  font-size: 0;
+  font-variation-settings: 'wght' 500;
+  display: flex;
+  align-items: center;
+  border-color: transparent;
+  box-sizing: border-box;
+  span{
+    font-size: 14px;
+    @include transform(translateY(1px));
+  }
+  svg,i{
+    font-size: 16px;
+    + span{
+      margin-right: 10px;
+    }
+  }
+  span{
+    + svg,i{
+      margin-right: 10px;
+    }
+  }
+  &.uk-button-icon{
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  &.uk-button-large{
+    font-size: 16px;
+    font-variation-settings: 'wght' 500;
+    height: 55px;
+    &.uk-button-icon{
+      width: 55px;
+    }
+  }
+  &.uk-button-default{
+    background-color: #fff;
+    &:hover{
+      border-color: $gray200;
+    }
+  }
+  &.uk-button-primary{
+    background-color: $primary;
+    color: #fff;
+  }
+  &.uk-button-disabled{
+    color: $gray300;
+    cursor: auto;
+    &:hover{
+      border-color: transparent;
+    }
+  }
+  &.uk-button-plain{
+    font-size: 14px;
+    color: $gray500;
+    @include transition();
+    &:hover{
+      color: $gray900;
+    }
+  }
+  &.uk-button-instagram{
+    background-color: #e1306c;
+    border: 1px solid darken(#e1306c, 5%);
+    color: #fff;
+    &:hover{
+      background-color: darken(#e1306c, 5%);
+    }
+  }
+  &.uk-button-facebook{
+    background-color: #3b5998;
+    border: 1px solid darken(#3b5998, 5%);
+    color: #fff;
+    &:hover{
+      background-color: darken(#3b5998, 5%);
+    }
+  }
+  &.uk-button-telegram{
+    background-color: #179cde;
+    border: 1px solid darken(#179cde, 5%);
+    color: #fff;
+    &:hover{
+      background-color: darken(#179cde, 5%);
+    }
+  }
+  &.uk-button-whatsapp{
+    background-color: #128c7e;
+    border: 1px solid darken(#128c7e, 5%);
+    color: #fff;
+    &:hover{
+      background-color: darken(#128c7e, 5%);
+    }
+  }
+  &.uk-button-twitter{
+    background-color: #1da1f2;
+    border: 1px solid darken(#1da1f2, 5%);
+    color: #fff;
+    &:hover{
+      background-color: darken(#1da1f2, 5%);
+    }
+  }
+  &.uk-button-linkedin,
+  &.uk-button-linkedin-in{
+    background-color: #0077b5;
+    border: 1px solid darken(#0077b5, 5%);
+    color: #fff;
+    &:hover{
+      background-color: darken(#0077b5, 5%);
+    }
+  }
+  &.iconBalance{
+    svg,i{
+      top: 2px;
+      position: relative;
+    }
+  }
+}
+
+//UIKit Overrides
+.uk-input,
+.uk-textarea{
+  font-size: 14px;
+  font-variation-settings: "wght" 500, "dots" 4;
+  @include border-radius();
+  @include transition(all .3s ease-out);
+  &::placeholder{
+    color: $gray500;
+  }
+  &:focus{
+    border-color: $primary;
+    @include box-shadow(0 0 0 1px $primary);
+  }
+  &.uk-form-danger{
+    border-color: $danger500;
+    color: $danger500;
+    &:focus{
+      @include box-shadow(0 0 0 1px $danger500);
+    }
+  }
+}
