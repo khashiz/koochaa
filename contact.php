@@ -3,6 +3,7 @@
 <body>
 <?php include ('partials_header.php'); ?>
 <?php include ('partials_page_head.php'); ?>
+<?php include ('partials_auth_modal.php'); ?>
 <main class="uk-padding-large uk-padding-remove-horizontal">
     <div class="uk-container">
         <div data-uk-grid>

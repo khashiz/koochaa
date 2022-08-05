@@ -30,7 +30,7 @@
                 </nav>
             </div>
             <div class="uk-width-auto uk-flex uk-flex-middle">
-                <a href="" title="" target="_self" class="uk-button uk-button-large uk-button-plain iconBalance">
+                <a href="#authModal" data-uk-toggle title="" target="_self" class="uk-button uk-button-large uk-padding-remove-horizontal uk-button-plain iconBalance">
                     <i class="far fa-user-alt"></i>
                     <span>ورود / ثبت نام</span>
                 </a>
