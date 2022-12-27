@@ -243,7 +243,6 @@ footer{
   }
   .card-footer{
     font-size: 0;
-    border-top: 1px solid $gray200;
     a{
       text-decoration: none;
       span{
@@ -269,6 +268,9 @@ footer{
         }
       }
     }
+    &.border-top{
+      border-top: 1px solid $gray200;
+    }
   }
 }
 
@@ -276,6 +278,7 @@ footer{
 .uk-text-zero{font-size: 0;}
 .uk-text-tiny{font-size: 12px;}
 .uk-padding-tiny{padding: 5px;}
+.uk-margin-tiny-bottom{margin-bottom: 5px;}
 .uk-background-primary{background-color: $primary !important;}
 .uk-button{
   font-size: 0;

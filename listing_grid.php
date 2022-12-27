@@ -65,7 +65,7 @@
             <div class="uk-width-1-1 uk-width-expand@s">
                 <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-medium" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 250">
                     <?php for ($i=1; $i<10; $i++) { ?>
-                        <?php include ('partials_card.php'); ?>
+                        <?php include ('partials_list_grid.php'); ?>
                     <?php } ?>
                 </div>
             </div>

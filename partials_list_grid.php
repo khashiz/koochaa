@@ -47,7 +47,7 @@
                 </li>
             </ul>
         </div>
-        <div class="card-footer uk-padding-small">
+        <div class="card-footer uk-padding-small border-top">
             <div class="uk-grid-small" data-uk-grid>
                 <div class="uk-width-expand">
                     <a href="" title="نشان کردن" class="uk-flex uk-flex-middle">
