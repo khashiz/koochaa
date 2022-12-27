@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="7b8f22f2-0444-4f36-b5c8-401be030f852" name="Koocha Local" url="http://localhost/koochaa">
-        <fileTransfer mountedRoot="F:\koochaa" accessType="MOUNT" port="0" />
+      <webServer id="7b8f22f2-0444-4f36-b5c8-401be030f852" name="Koocha Local" url="http://localhost:8888/koochaa">
+        <fileTransfer mountedRoot="$PROJECT_DIR$" accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>
