@@ -178,18 +178,6 @@
                     </form>
                 </div>
             </div>
-            <div>
-                <h3 class="font f700 uk-h4">تولتیپ</h3>
-                <div>ffffff</div>
-            </div>
-            <div>
-                <h3 class="font f700 uk-h4">لیست دارای آیکن</h3>
-                <div>ffffff</div>
-            </div>
-            <div>
-                <h3 class="font f700 uk-h4">جدول ساده</h3>
-                <div>ffffff</div>
-            </div>
         </div>
     </div>
 </main>

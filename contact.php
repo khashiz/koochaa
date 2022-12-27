@@ -90,5 +90,6 @@
 </main>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25913.313084494715!2d51.2902300848877!3d35.722181647537255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dfc7da02cd153%3A0xfa1d1d1813208ed4!2sAzadi%20Racing%20Track!5e0!3m2!1sen!2sus!4v1659227347949!5m2!1sen!2sus" width="1600" height="400" class="uk-width-1-1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <?php include ('partials_footer.php'); ?>
+<?php include ('partials_auth_modal.php'); ?>
 </body>
 </html>

@@ -156,10 +156,10 @@ ul{
   &.modalTabs{
     li{
       a{
-        color: $gray600;
+        color: $gray400;
         font-size: 14px;
         text-decoration: none;
-        @extend .f500;
+        @extend .f700;
         @include transition();
         &:hover{
           color: $gray700;

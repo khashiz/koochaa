@@ -73,5 +73,6 @@
     </div>
 </main>
 <?php include ('partials_footer.php'); ?>
+<?php include ('partials_auth_modal.php'); ?>
 </body>
 </html>
